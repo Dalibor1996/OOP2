@@ -1,16 +1,36 @@
-# This is a sample Python script.
+class Kniha:
+    def __init__(self, nazov, autor, ISBN, rok_vydania):
+        self.nazov = nazov
+        self.autor = autor
+        self.ISBN = ISBN
+        self.dostupna = True
+        self.rok_vydania = rok_vydania
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def vypozicat(self):
+        self.dostupna = False
+class Kniznica:
+    def __init__(self):
+        self.zoznam_knih = []
+
+    def pridaj_knihu(self, kniha):
+        self.zoznam_knih.append(kniha)
+
+    def pozicaj_knihu(self, ISBN_knihy):
+        for kniha in self.zoznam_knih:
+            if
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+kniha1 = Kniha("Harry Potter", "Rowlingova", 123, 2010)
+kniha2 = Kniha("Pan prstenov", "Tolkien", 321, 2003)
+kniha3 = Kniha("Nejaka", "Dalibor", 222, 2010)
+
+print(kniha.price)
+kniha.price = 20
+print(kniha.price)
